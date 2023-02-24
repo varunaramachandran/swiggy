@@ -1,0 +1,26 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="../assets/image/Swiggy-App-Logo-PNG.jpg"
+  />
+  <span>Welcome</span>
+  <div class="spacer"></div>
+  <span (click)="logout()">Logout</span>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3" style="padding: 70px">
+  <div class="col mb-4" *ngFor="let item of restaurants">
+    <div class="card" (click)="restaurantDetail(item.id, item.foodMenu)">
+      <img src="{{ item.image }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">
+          This is a longer card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

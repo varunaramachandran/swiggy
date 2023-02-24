@@ -1,0 +1,20 @@
+<div>
+  <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="fname">Phone number</label>
+      <input type="number" id="phone" formControlName="phone" />
+      <span *ngIf="formControls['phone'].errors">
+        <span
+          class="err-msg"
+          *ngIf="
+            formControls['phone'].errors['required'] &&
+            formControls['phone'].touched
+          "
+          >Phone number is required</span
+        >
+      </span>
+    </div>
+
+    <button class="btn">CONTINUE</button>
+  </form>
+</div>

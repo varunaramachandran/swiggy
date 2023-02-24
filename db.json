@@ -1,0 +1,100 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "searchKeywords": "porota",
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+      "title": "Sri Jayadurga Biryani",
+      "rating": 4,
+      "food": "description string",
+      "time": "2pm",
+      "foodMenu": [
+        {
+          "resturantId": 1,
+          "productId": 1,
+          "title": "Whole Chicken Shawarma          ",
+          "price": "120",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+          "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+          "qty": 1
+        },
+        {
+          "resturantId": 1,
+          "productId": 2,
+          "title": "Whole Chicken Shawarma          ",
+          "price": "120",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+          "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "searchKeywords": "porota",
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vpbgdrvdllu1glwnfofr",
+      "title": "Sri Jayadurga Biryani",
+      "rating": 4,
+      "food": "description string",
+      "time": "2pm",
+      "foodMenu": [
+        {
+          "resturantId": 2,
+          "productId": 3,
+          "title": "Whole Chicken Shawarma          ",
+          "price": "120",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+          "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+          "qty": 1
+        },
+        {
+          "resturantId": 2,
+          "productId": 4,
+          "title": "Whole Chicken Shawarma          ",
+          "price": "120",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+          "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "name": "Akarsh",
+      "email": "akarshas.mail@gmail.com",
+      "phone": 111,
+      "id": 1
+    },
+    {
+      "name": "varuna",
+      "email": "varuna@mailinator.com",
+      "phone": 8848615094,
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "resturantId": 1,
+      "productId": 1,
+      "title": "Whole Chicken Shawarma          ",
+      "price": "120",
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+      "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+      "qty": 1,
+      "isInCart": false,
+      "id": 1
+    },
+    {
+      "resturantId": 1,
+      "productId": 2,
+      "title": "Whole Chicken Shawarma          ",
+      "price": "120",
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/e5k8viofbtrxxo75lxdy",
+      "description": "Authentic arabic shawarma wrapped in kuboos & loaded with chicken, fries, vegetables & toum (garlic sauce).",
+      "qty": 1,
+      "isInCart": false,
+      "id": 2
+    }
+  ]
+}
