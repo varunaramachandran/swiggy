@@ -44,7 +44,6 @@ export class LoginComponent {
       this.LoginForm.markAllAsTouched();
       return;
     }
-    console.log('val', this.LoginForm.value);
     this.authService.getUsers().subscribe({
       next: (res: Users[]) => {
         if (res) {

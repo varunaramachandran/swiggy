@@ -46,7 +46,6 @@ export class RestaurantComponent {
   getCartData() {
     this.cartService.getCartData().subscribe({
       next: (res: Cart[]) => {
-        console.log('cartData', res);
         if (res.length) {
           this.currentRestaurentId = res[0].resturantId;
         } else {

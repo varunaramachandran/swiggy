@@ -29,7 +29,6 @@ export class SignUpComponent {
 
   changeClass() {
     this.toggleSidenav = !this.toggleSidenav;
-    console.log('hii', this.toggleSidenav);
   }
 
   initializeForm() {
@@ -57,22 +56,18 @@ export class SignUpComponent {
       this.signUpForm.markAllAsTouched();
       return;
     }
-    console.log('val', this.signUpForm.value.phone);
     this.authService.getUsers().subscribe({
       next: (res: Users[]) => {
-        console.log('getUsers', res);
         if (res) {
           this.users = res;
           let result = this.users.find((item: any) => {
             return item.phone == this.signUpForm.value.phone;
           });
-          console.log('result', result);
           if (result) {
             this.toaster.error('This user already exist');
           } else {
             this.authService.postSignUp(this.signUpForm.value).subscribe({
               next: (res) => {
-                console.log('res', res);
                 // this.router.navigate(['/restaurants']);
                 this.newItemEvent.emit('showLogin');
               },

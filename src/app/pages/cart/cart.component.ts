@@ -37,7 +37,6 @@ export class CartComponent {
           });
         },
         onError: function (err: any) {
-          console.log('Something went wrong', err);
         },
       })
       .render('#paypal-button-container');
